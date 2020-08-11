@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <title>ejw Contact Me</title>
 </head>
+
 <body>
-    
+
+    <div class="fixed-bottom">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-light p-4">
+            <h5 class="text-white h4"><a class="text-dark" href="index.html">Main Page</a></h5>
+            <h5 class="text-white h4"><a class="text-dark" href="./about.html">About Me</a></h5>
+            <h5 class="text-white h4"><a class="text-dark" href="./projects.html">Projects</a></h5>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-success">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+        </nav>
+      </div>
+
+      <!-- CONTACT FORM -->
+    <form class="form-group" id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+    action="https://formspree.io/eric@ericjwinebrenner.com" method="post">
+            <div class="align-items-center contactPage">
+
+            <legend>What can I do for you?</legend>
+            <fieldset id="fs-frm-inputs">
+                <!-- <label for="full-name">Full Name</label> -->
+                <input class="form-control form-control-sm col-md-6 myForm" type="text" name="name" id="full-name"
+                    placeholder="Full Name" required="">
+
+                <!-- <label for="email-address">Email Address</label> -->
+                <input class="form-control form-control-sm col-md-6 myForm" type="email" name="_replyto" id="email-address"
+                    placeholder="youraddress@email.com" required="">
+
+                <!-- <label for="message">Message</label> -->
+                <textarea class="form-control form-control-sm col-md-6 myForm" rows="5" name="message" id="message"
+                    placeholder="...your message here" required=""></textarea>
+
+                <input class="form-control form-control-sm col-md-6 myForm" type="hidden" name="_subject" id="email-subject"
+                    value="Contact Form Submission">
+            </fieldset>
+            <!-- <input class="btn btn-outline-success" type="submit" value="Submit"> -->
+            <button class="btn btn-outline-success myForm" type="submit" value="Submit">Send</button>
+
+        </div>
+        </form>
+
+    <!-- SCRIPTS -->
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
